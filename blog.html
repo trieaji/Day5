@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="blog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>Blog</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-left">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="blog.html">Blog</a>
+                </li>
+            </ul>    
+        </div>
+        
+            <div class="nav-right">
+                <a href="contact.html">Contact</a>    
+            </div>
+    </nav>
+    <div class="blog">
+        <div class="blog-form">
+            <div class="form-container">
+                <form onsubmit="addBlog(event)">
+                <h1>Create Post Blog</h1>
+                <div>
+                    <label for="input-blog-tittle" class="inputblogtittle">Project Name</label>
+                    <input id="input-blog-tittle" class="inputblog"/>
+                </div>
+                <div>
+                    <label for="input-start-date" class="inputstartdate">Start Date</label>
+                    <input id="startdate" name="startdate" class="start-date">
+                </div>
+                <div>
+                    <label for="input-end-date" class="inputenddate">End Date</label>
+                    <input id="enddate" name="enddate" class="end-date">
+                </div>
+                <div>
+                    <label for="input-blog-content">Description</label>
+                    <textarea id="input-blog-content" class="inputblogcontent"></textarea>
+                </div>
+                <div class="form-parts">
+                    <span class="techno"><h3>Technologies</h3></span>
+                    <input type="checkbox" value="node" id="input-nodejs">Node Js
+                    <input type="checkbox" value="github" id="input-git">Git Hub
+                    <input type="checkbox" value="react" id="input-reactjs">React Js
+                </div>
+                <p>
+                    <div>
+                        <label>Upload image</label>
+                        <div class="input-blog-image-group">
+                            <label for="input-blog-image">
+                                <p>Attach File</p>
+                                <img src="assets/file.png" alt="">
+                            </label>
+                            <input type="file" id="input-blog-image" class="inputblogmage">
+                        </div>
+                    </div>
+                </p>
+                
+                <div class="button-group">
+                    <button>Submit</button>
+                    <!-- <button type="button" class="btklik" id="btklik">Diklik</button> -->
+                </div>
+                </form>
+            </div>
+        </div>
+        <hr class="line">
+        <div id="contents" class="blog-list">
+            <!-- <div class="blog-list-item"> disimpannya disini
+                <div class="blog-image"></div>
+                
+                <img src="assets/dumbways.png" alt="">
+            </div> -->
+           <!--  <div class="blog-content">
+                <div class="btn-group">
+                    <button class="btn-edit">Edit Post</button>
+                    <button class="btn-post">Post Blog</button>
+                </div>
+                <h1>
+                    <a href="blog-detail.html" target="_blank">
+                        Pasar coding di Indonesia dinilai masih menjanjikan
+                    </a>
+                </h1>
+                <div class="detail-blog-content">
+                    12 Jul 2021 22:30 WIB | Bambang
+                </div>
+                <p>
+                    Ketimpangan sumber daya manusia (SDM) di sektor digital masih menjadi isu yang belum terpecahkan. Berdasarkan penelitian ManpowerGroup, ketimpangan SDM global, termasuk Indonesia, meningkat dua kali lipat dalam satu dekade terakhir.Khusus di sektor teknologi yang berkembang pesat, menurut Kemendikbudristek, Indonesia kekurangan sembilan juta pekerja teknologi hingga tahun 2030. Hal itu berarti Indonesia memerlukan sekitar 600 ribu SDM digital yang memasuki pasar setiap tahunnya. Karena itu, perlu disiapkan SDM digital, khususnya yang paham dunia pengkodingan.
+                </p>
+            </div> -->
+        </div>
+        <!-- content -->
+       
+    </div>
+    <!-- <a href="blog-detail.html"><button class="btn-edit">Edit Post</button></a>
+    <button class="btn-edit">Edit Post</button>
+                <button class="btn-post">Post Blog</button> -->
+    
+    <script src="blog.js"></script>
+</body>
+</html>
